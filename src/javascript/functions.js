@@ -1,5 +1,8 @@
 
 // Fucntion declaration -> They are Hoisted.
+
+const { CircularProgress } = require("@material-ui/core");
+
 // Meaning of Hoisted-> You can invoke a function before its declaration.
 function compliment() {
     console.log("Doing good");
@@ -49,6 +52,15 @@ const regions = {
 };
 // Note ARrow function donot block  off scope of "this".
 regions.print();
+
+// Arrow function must be wrapped under the paranthesis to avoid lot of countless bugs.
+
+const showcases = (homecase, officecase) => ({
+    home: homecase,
+    office: officecase
+})
+
+console.log(showcases('Elephant', 'LaughingBuddha'));
 
 // Destructuring of the objects in javascript for the react.
 
@@ -103,19 +115,83 @@ console.log(bread, meat);
 // or any object by keeping the original data of the sandwich object same.
 let { chesse, flavor } = sandwich;
 chesse = 'garlic';
-flavor: 'vanilla'
+flavor='vanilla';
 console.log(chesse, flavor);
 
-const skier = {
-    name,
-    sound,
+// const skier = {
+//     sound,
+//     powerYell() {
+//         let yell = this.sound.toUppercase();
+//         console.log(`${yell}`);
+//     },
+//     speed(mph) {
+//         this.speed = mph;
+//         console.log('speed:', mph);
+//     }
+// };
 
-    powerYell() {
-        let yell = this.sound.toUppercase();
-        console.log(`${yell}`);
-    },
-    speed(mph) {
-        this.speed = mph;
-        console.log('speed:', mph);
-    }
-};
+const string = 'Restaurants in Hanalei';
+const url = "";
+
+// for (var i = 0; i < string.length; i++) {
+//     if (string[i] === " ") {
+//         url += "-";
+//     } else {
+//         url=url+ string[i];
+//     }
+// }
+
+// console.log(url);
+
+const sentence = "Restaurants in Hanalei";
+const urlFriendly = sentence.replace(/ /g, "-");
+console.log(urlFriendly);
+
+// Imperative vs Declarative...
+// Declarative means what should be done by the function.
+// Imperative means How should be done in the function...
+
+
+// first we will see imperative approach.
+// const strings="Restaurant in Hauleli";
+// let  urlfriendly="";
+
+// for(var i=0;i<string.length;i++){
+//     if(strings[i]===" "){
+//         urlFriendly+="-";
+//     }else{
+//         urlFriendly+=strings[i];
+//     }
+// }
+// console.log(urlfriendly);
+
+// pure  functions
+
+const kingdom={
+    king:"Chattrapti Shivaji Maharaj",
+    Ruler:false,
+    forts:false
+}
+
+const King=person=>({
+    ...person,
+    Ruler:true,
+    fort:"Raigad"
+});
+console.log(King(kingdom))
+console.log(kingdom)
+
+// Pure functions are naturally testable. They do not change anything about the environment .
+// Pure function atleast takes one argumement and return a value or function.
+// They treat their arguments as immutable data.
+
+// Data Transformation
+
+// How does anything change in an application  if the data is immutable?
+//  Functional programming is all about transforming data from one from to another.
+// We'll produce transformed copies using functions. These function make our code less imperative
+// and thus reduce complexity.
+
+// You do not need a special framework to understand how to produce one dataset that is based upon 
+// another.
+
