@@ -4,7 +4,8 @@ class Message extends Component {
    constructor(){
        super()
        this.state={
-           message:"Keep it up Learning "
+           message:"Keep it up Learning ",
+           newmessage:"Almost done"
        }
    }
    changeMessage(){
