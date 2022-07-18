@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Person from './Person'
 
 function NameList() {
+    const namesdata=["Kayan","Dayan","Mayan","Kayan"]
     const PersonsData = [
         {
             id: "Sandeep",
@@ -19,7 +20,9 @@ function NameList() {
             age: "21"
         }
     ]
-    const personsList = PersonsData.map((person) => <Person person={person} />)
+    // Donot use key prop to render any data.
+    // const personsList = PersonsData.map((person) => <Person key={person.id} person={person} />)
+    const personsList = namesdata.map((names,index)=><h1 key={index}>{index} {names}</h1>)
     console.log(personsList)
     return (
         <Fragment>{personsList}</Fragment>

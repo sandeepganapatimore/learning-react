@@ -39,3 +39,21 @@
 - * element varaibles.
 - * Ternary conditional operator.
 - * short circuit operator.
+
+# List and Keys 
+- A "Key" is a special attribute you need to include when creating lists of elements.
+- Keys give the elements a stable identity.
+- Keys help React identity which items have changed are added or are removed.
+- Help in efficient update of the user interface.
+
+# index
+- Item in the list should not have a unique id.
+- The list is a static list and will not change.
+- The list will never be reorder or filtered.
+ry avoiding the index as key in the react app.
+
+# styling the React component
+- CSS Stylesheet
+- inline Styling 
+- CSS modules
+- CSS in js library
