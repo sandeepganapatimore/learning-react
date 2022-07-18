@@ -13,12 +13,12 @@ import Stylesheet from './Components/Stylesheet';
 import './Components/appStyle.css'
 import styles from'./Components/appStyles.module.css'
 import Inline from './Components/Inline';
-
+import Form from './Components/Form';
 function App() {
   return (
     <div className="App">
-      <h1 className='error'>Error</h1>
-      <h2 className={styles.success}>Success</h2>
+      {/* <h1 className='error'>Error</h1>
+      <h2 className={styles.success}>Success</h2> */}
       {/* <Greet name="React" feature="Js library" />
       <Welcome char="Spiderman" person="Peter parker" />
       <Message />
@@ -30,7 +30,8 @@ function App() {
       {/* <UserGreeting/> */}
       {/* <NameList/> */}
       {/* <Stylesheet primary={true}/> */}
-      <Inline/>
+      {/* <Inline/> */}
+      <Form/>
     </div>
   );
 }

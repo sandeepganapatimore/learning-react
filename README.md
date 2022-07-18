@@ -57,3 +57,7 @@ ry avoiding the index as key in the react app.
 - inline Styling 
 - CSS modules
 - CSS in js library
+
+# Form Handling
+- Controlled component:- The form which is controlled by react is called as controlled component.
+- 
