@@ -61,3 +61,65 @@ ry avoiding the index as key in the react app.
 # Form Handling
 - Controlled component:- The form which is controlled by react is called as controlled component.
 - 
+
+# Life-Cycle Methods
+ ## 1) Mounting
+ - When an instance of a component is being created and inserted into the DOM.
+ ### There are four methods:-
+- * constructor
+- * static getDerivedStateFromProps
+- * render
+- * ComponentDidMount.
+
+ ## 2) Updating
+ - When a component is being re-rendered as a result of changes to either its props or state.
+ ### There five methods.
+ - * static getDerivedStateFromProps
+ - * shouldComponentUpdate
+ - * render
+ - * getSnapshotBeforeupdate
+ - * componentDidUpdate.
+
+ ## 3) UnMounting
+ - When component is removed from the DOM.
+### There is only one type.
+- * componentwillUnmount
+
+ ## 4) Error-Handling
+ - When there is error during rendering, in life-cycle method, or in the constructor of any child component.
+ ### There are Two types..
+ - * static getDerivedStateFromprop(prop,state)
+ - * ComponentDidCatch.
+
+
+
+
+ # Mounting Life-Cycle Methods.
+ - Constructor(props):- A Special function that will get called whenever a new component is created.
+ - Initializing state Binding the event handlers.
+ - Do not cause side effects, Ex:-HTTP request.
+ - Super(props) this will call base class constructor Directly overwrite this,state
+ 
+ ### 2) static getDerivedStateFromProps
+ - Donot use `this` keyword because it is static
+ - render() method is used to build the UI.
+ - only require method 
+ - Used to Read props and state ans return JSX.
+ - Do not change state or interact with DOM or make ajax calls.
+ - Children components lifecycle methods are also executed.
+
+## Updating Lifecycle Method
+### static getDerivedStateFromprop(prop,state):
+- only required method
+### shouldComponentUpdate(nextProps,nextState) :
+- Read props & state and return JSX.
+### render()
+- Donot change state or interact with DOM or make ajax calls.
+### getSnapshotBeforeUpdate(prevProps,prevState):
+- Called right before the changes from the virtual DOM are to be reflected on the DOM.
+- Capture some information from the DOM.
+- Method will either return null or return a value. Returned value will be passed as the third parameter to the next method.
+### componentDidUpdate(prevProps,prevState,snapshot):
+- Comparing current and previous props whether ti update the UI or not.
+- Called after the render is finished in the re-render cycles.
+- Cause side effects.

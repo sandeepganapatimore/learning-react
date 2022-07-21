@@ -14,6 +14,7 @@ import './Components/appStyle.css'
 import styles from'./Components/appStyles.module.css'
 import Inline from './Components/Inline';
 import Form from './Components/Form';
+import LifeCycleA from './Components/LifeCycleA';
 function App() {
   return (
     <div className="App">
@@ -31,7 +32,8 @@ function App() {
       {/* <NameList/> */}
       {/* <Stylesheet primary={true}/> */}
       {/* <Inline/> */}
-      <Form/>
+      {/* <Form/> */}
+      <LifeCycleA/>
     </div>
   );
 }
