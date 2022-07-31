@@ -123,3 +123,20 @@ ry avoiding the index as key in the react app.
 - Comparing current and previous props whether ti update the UI or not.
 - Called after the render is finished in the re-render cycles.
 - Cause side effects.
+
+
+# Fragements
+- Fragments let you group the elements without adding the extra node in the DOM tree.
+- Fragements can be defined in two ways 
+- 1) <React.Fragments> <React.Fragments/>
+- 2) <> </> empty brackets are also known as the fragements.
+
+
+# Pure Component: -
+- `rpce` is snippet to create the pure class component.
+- pure component VS component
+-  Def:- It implements shouldCompnentUpdate with a shallow props and state comparison.
+## Shallow comparision (SC):
+- A) Primitive Type:- a & b returns true if they have same type.
+- B) Complex Type: a&b returns true of they refere to the exact same object.
+- Component is re-rendered only if there is the difference in the Shallow component.

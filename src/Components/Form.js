@@ -55,7 +55,8 @@ export class Form extends Component {
                         <option value='vue'>Vue</option>
                     </select>
                 </div>
-                <button type='submit'>Submit</button> // if we use type="submit" then we can submit the form using enter button.
+                <button type='submit'>Submit</button>
+                 {/* // if we use type="submit" then we can submit the form using enter button. */}
             </form>
         )
     }
