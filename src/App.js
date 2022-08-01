@@ -1,6 +1,9 @@
 import './App.css';
 import React from 'react';
-import Marvel from './Components/Marvel';
+import ClickCounter from './Components/ClickCounter';
+import HoverCount from './Components/HoverCount';
+// import Marvel from './Components/Marvel';
+// import ErrorBoundary from './Components/ErrorBoundary';
 // import Input from './Components/Input';
 // import FRParentinput from './Components/FRParentinput';
 // import PortalDemo from './Components/PortalDemo';
@@ -30,40 +33,49 @@ import Marvel from './Components/Marvel';
 // import StarRating from './Components/StarRating';
 function App() {
   return (
-    <React.Fragment>
-      <div className="App">
-        {/* <h1 className='error'>Error</h1>
+
+    <div className="App">
+      {/* <h1 className='error'>Error</h1>
       <h2 className={styles.success}>Success</h2> */}
-        {/* <Greet name="React" feature="Js library" />
+      {/* <Greet name="React" feature="Js library" />
       <Welcome char="Spiderman" person="Peter parker" />
       <Message />
       <FunctionClick />
       <ClassClick /> */}
-        {/* <EventBind /> */}
-        {/* <Toggle /> */}
-        {/* <ParentComponent/> */}
-        {/* <UserGreeting/> */}
-        {/* <NameList/> */}
-        {/* <Stylesheet primary={true}/> */}
-        {/* <Inline/> */}
-        {/* <Form/> */}
-        {/* <LifeCycleA/> */}
-        {/* <Tables/> */}
-        {/* <ParentComp/> */}
-        {/* <Menu recipes={data} /> */}
-        {/* <RefsDemo/> */}
+      {/* <EventBind /> */}
+      {/* <Toggle /> */}
+      {/* <ParentComponent/> */}
+      {/* <UserGreeting/> */}
+      {/* <NameList/> */}
+      {/* <Stylesheet primary={true}/> */}
+      {/* <Inline/> */}
+      {/* <Form/> */}
+      {/* <LifeCycleA/> */}
+      {/* <Tables/> */}
+      {/* <ParentComp/> */}
+      {/* <Menu recipes={data} /> */}
+      {/* <RefsDemo/> */}
 
-        {/* <StarRating/> */}
-        {/* <Input /> */}
-        {/* <FRParentinput /> */}
-        {/* <PortalDemo/> */}
+      {/* <StarRating/> */}
+      {/* <Input /> */}
+      {/* <FRParentinput /> */}
+      {/* <PortalDemo/> */}
+      {/* <ErrorBoundary>
         <Marvel character="BlackPanther" />
-        <Marvel character="IronMan" />
-        <Marvel character="Captain Marvel" />
-        <Marvel character="Thanos" />
+      </ErrorBoundary>
 
-      </div>
-    </React.Fragment>
+      <ErrorBoundary>
+        <Marvel character="IronMan" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Marvel character="Captain Marvel" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Marvel character="Thanos" />
+      </ErrorBoundary> */}
+      <ClickCounter />
+      <HoverCount />
+    </div>
   )
 }
 
