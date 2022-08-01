@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import { useState } from 'react';
 import ClickCounter from './Components/ClickCounter';
 import HoverCount from './Components/HoverCount';
 // import Marvel from './Components/Marvel';
@@ -32,9 +33,39 @@ import HoverCount from './Components/HoverCount';
 // import RefsDemo from './Components/RefsDemo';
 // import StarRating from './Components/StarRating';
 function App() {
+  const [title, setTitle] = useState("");
+  const [color, setColor] = useState("#000000");
+  const submit = (e) => {
+    e.preventDefault();
+    alert(`${title},${color}`);
+  }
+
+
   return (
 
-    <div className="App">
+    <div className="App" id='textBox'>
+      <form>
+        <input
+
+          type="text"
+
+        />
+        <input type="text"
+          value={setTitle}
+          onChange={(event) => {
+            setTitle(event.target.value)
+          }}
+          placeholder='color title...'
+        />
+        <input
+          value={setColor}
+          type="color"
+          onChange={(event) => {
+            setColor(event.target.value)
+          }}
+        />
+        <button>ADD</button>
+      </form>
       {/* <h1 className='error'>Error</h1>
       <h2 className={styles.success}>Success</h2> */}
       {/* <Greet name="React" feature="Js library" />
@@ -73,8 +104,8 @@ function App() {
       <ErrorBoundary>
         <Marvel character="Thanos" />
       </ErrorBoundary> */}
-      <ClickCounter />
-      <HoverCount />
+      {/* <ClickCounter />
+      <HoverCount /> */}
     </div>
   )
 }
