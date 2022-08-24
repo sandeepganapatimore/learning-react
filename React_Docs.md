@@ -69,3 +69,33 @@ allows developers to consistently use cutting-edge JavaScript syntax.`
   UI after an error is thrown.
 - 2) componentDidCatch(error) :- It is used to log the error message.
 - Main purpose is to catch the fallback errors and display the falback UI for the error.
+
+# Hooks:
+## Why do we use Hooks ?
+- We incorporate the state in the react function component React feature called Hooks.
+- Hooks contain reusable code logic that is separate from the component  tree.
+
+# 1 UseState Hook:- 
+- This Hook is used to manage the react state in the functional component.
+- The syntax contains array destructuring properties .
+  ``
+  const [state,setState]=useState()
+  ``
+- first parameter is the varaible state and second one is the function which is used to update the state.
+
+# 2 UseEffect Hook:-
+- UseEffect is the combination of *ComponentDidMount(), ComponentDidUpdate(),Componentwillunmount()*
+- it consists of two parameter.
+- first returns  arrow fucntion.
+- second returns dependency array [] this is known as conditinal rendering.
+- if the dependency array is empty it will render only once.
+- The dependency array can have value on which the effect will display. 
+
+# UseContext:- 
+- First create the context value as shown in App.js
+- Next export the const values.
+- import the const value in function .
+- set the value the using *.Provider* method.
+- Use that value in other component.
+- in other component import the useContext formt the React.
+- pass the defines const value as the parameter to the function.

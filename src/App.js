@@ -1,8 +1,21 @@
 import './App.css';
 import React from 'react';
-import { useState } from 'react';
-import ClickCounter from './Components/ClickCounter';
-import HoverCount from './Components/HoverCount';
+
+import UseReducerThreee from './Hooks/UseReducerThreee';
+// import UseReducerTwo from './Hooks/UseReducreTwo';
+// import { useState, useEffect } from 'react';
+// import ErrorBoundary from './Components/ErrorBoundary';
+// import UseStateHook from './Hooks/UseStateHook';
+// import UseHookTwo from './Hooks/UseHookTwo';
+// import UseHookfour from './Hooks/UseHookfour';
+// import UseEffectOne from './Hooks/UseEffectOne';
+// import ClassCounterOne from './Components/ClassCounterOne';
+// import IntervalHookCounter from './Hooks/IntervalHookCounter';
+// import DataFetching from './Hooks/DataFetching';
+// import Consuming_Context from './Hooks/Consuming_Context';
+// import Value from './Components/Value';
+// import ClickCounter from './Components/ClickCounter';
+// import HoverCount from './Components/HoverCount';
 // import Marvel from './Components/Marvel';
 // import ErrorBoundary from './Components/ErrorBoundary';
 // import Input from './Components/Input';
@@ -16,7 +29,7 @@ import HoverCount from './Components/HoverCount';
 // import NameList from './Components/NameList';
 // import ParentComponent from './Components/ParentComponent';
 // import UserGreeting from './Components/UserGreeting';
-// // import Toggle from './Components/Toggle';
+// import Toggle from './Components/Toggle';
 // import Welcome from './Components/Welcome';
 // import Stylesheet from './Components/Stylesheet';
 // import './Components/appStyle.css'
@@ -32,20 +45,50 @@ import HoverCount from './Components/HoverCount';
 // import MemoComp from './Components/MemoComp';
 // import RefsDemo from './Components/RefsDemo';
 // import StarRating from './Components/StarRating';
+
+
+
+
+// export const UserContext=React.createContext();
+// export const ChannelContext=React.createContext();
+
+
+
 function App() {
-  const [title, setTitle] = useState("");
-  const [color, setColor] = useState("#000000");
-  const submit = (e) => {
-    e.preventDefault();
-    alert(`${title},${color}`);
-  }
+  // const [title, setTitle] = useState("");
+  // const [color, setColor] = useState("#000000");
+  // const submit = (e) => {
+  //   e.preventDefault();
+  //   alert(`${title},${color}`);
+  // }
+  // const [data, setdata] = useState(null);
+
+  // useEffect(() => {
+  //   fetch(`https://api.github.com/users/sandeepganapatimore`)
+  //     .then((response) => response.json())
+  //     .response(setdata);
+  // }, []);
+  // if (data)
+  //   return <pre>{JSON.stringify(data, null, 2)}</pre>
+
 
 
   return (
 
     <div className="App" id='textBox'>
-      <form>
-        <input
+      
+
+
+
+
+
+
+
+
+      {/* <h1>{data}</h1>
+      <h1>data</h1>
+      {/* <form> */}
+      {/* <input
 
           type="text"
 
@@ -64,8 +107,27 @@ function App() {
             setColor(event.target.value)
           }}
         />
-        <button>ADD</button>
-      </form>
+        <button>ADD</button> */}
+      {/* </form  <form>
+        <input
+
+          type="text"
+        />
+        <input type="text"
+          value={setTitle}
+          onChange={(event) => {
+            setTitle(event.target.value)
+          }}
+          placeholder='color title...'
+        />
+        <input
+          value={setColor}
+          type="color"
+          onChange={(event) => {
+            setColor(event.target.value)
+          }}
+        />
+        <button>ADD</button>I> */}
       {/* <h1 className='error'>Error</h1>
       <h2 className={styles.success}>Success</h2> */}
       {/* <Greet name="React" feature="Js library" />
@@ -106,7 +168,28 @@ function App() {
       </ErrorBoundary> */}
       {/* <ClickCounter />
       <HoverCount /> */}
+      {/* <UseStateHook />
+
+      <UseHookTwo/> */}
+     {/* <UseHookfour/> */}
+     {/* <UseEffectOne/> */}
+     {/* <ClassCounterOne/> */}
+       {/* <IntervalHookCounter/> */}
+       {/* <DataFetching/> */}
+       {/* <Consuming_Context/> */}
+
+       {/* <UserContext.Provider value={'Sandeep'}>
+        
+        <ChannelContext.Provider>
+
+        </ChannelContext.Provider>
+
+       </UserContext.Provider> */}
+
+       {/* <UseReducerTwo/> */}
+       <UseReducerThreee/>
     </div>
+
   )
 }
 

@@ -14,6 +14,8 @@
 - Varaibles declared in function body.
 - useState Hook- Functional components.
 - this.state- Class component.
+- It is also called as local or encapsulated. 
+- 
 
 
 # Destructuring 
